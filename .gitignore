@@ -1,5 +1,5 @@
 # git ignore
-.DS_store
+.DS_Store
 .ipynb_checkpoints/
 PlayerAttributeData.csv
 PlayerPersonalData.csv
