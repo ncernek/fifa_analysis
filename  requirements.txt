@@ -4,3 +4,4 @@ matplotlib
 seaborn
 jupyter
 scipy
+jupyter_contrib_nbextensions
