@@ -1,17 +1,40 @@
-# fifa analysis
-In this repository, I explore fifa data from the perspective of a club manager.
-My goal is to gain insights on how to build a better team.
+# FIFA Replacement Strategy
+This project's goal is to recommend replacement players to the Real Madrid Football Club.
 
-## table of contents
-[Finding replacement players from other teams](replacements.ipynb)
+## goal
+The client for this project is a fictional recruiting manager of the Real Madrid Football Club. This manager has the job of recruiting new players to the club. His goal is to improve the skill of the club as much as possible, within certain parameters. For this project, the manager wants help recruiting new players who are already playing in fifa clubs. 
 
-[Determining whether a player is a specialist or a generalist](rating_distribution.ipynb)
+## parameters
+* recruiting pool: existing fifa players
+* replacement pool: current Real Madrid players
+* budget: replacement players cannot cost more then the players they are replacing
+    * for the sake of simplicity, I do not take into account contracts. I assume the timing of hiring is not an issue.
+* optimization parameter: the aggregate Overall ratings of players
+    * 'Overall' is a feature of the data that designates an individual player's overall skill
+   
+## solution
+There are 1 layers of analysis that can be applied to recommend replacement players. 
 
-[Exploring the relationship between preferred and best positions](preferred_positions.ipynb)
+1. **Simple Filter:** a filter that takes into account wage, position, and overall rating to make recommendations based on the input of replacing a single specific player. This filter takes into account that younger players will get a higher overall rating as they get older, by adjusting the overall rating by age.
 
-[Predicting a player's  performance](predict_performance.ipynb)
+## project layout
+0. brainstorm solutions feature by feature
+1. [Clean the data](clean.ipynb)
+2. [Create filter on wage, position, and overall rating](simple_filter.ipynb)
+3. [Add age adjusted overall rating to filter](age_adjusted_filter.ipynb)
 
-[Cleaning the data](clean.ipynb)
+## secondary explorations 
+The following explorations do not directly suggest recommendations, however they give insight that speaks to understanding a player's skills.
+[Predict overall rating based on individual techniques](predict_performance.ipynb)
+[Determine whether a player is a specialist or a generalist](rating_distribution.ipynb)
+[Explore the relationship between preferred and best positions](preferred_positions.ipynb)
+
+## installation guide
+```
+git clone https://github.com/ncernek/fifa_replacements.git
+cd fifa_replacements/
+pip install -r requirements.txt
+```
 
 ## source
 This data comes from [kaggle.com](https://www.kaggle.com/thec03u5/fifa-18-demo-player-dataset).
