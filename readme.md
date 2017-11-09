@@ -20,8 +20,9 @@ There are 1 layers of analysis that can be applied to recommend replacement play
 ## project layout
 0. brainstorm solutions feature by feature
 1. [Clean the data](clean.ipynb)
-2. [Create filter on wage, position, and overall rating](simple_filter.ipynb)
-3. [Add age adjusted overall rating to filter](age_adjusted_filter.ipynb)
+2. [Create filter on wage, position, and overall rating](filter_simple.ipynb)
+3. [Add age adjusted overall rating to filter](filter_age_adjusted.ipynb)
+4. [Wrap the solution in a function](scale_solution.ipynb)
 
 ## secondary explorations 
 The following explorations do not directly suggest recommendations, however they give insight that speaks to understanding a player's skills.
