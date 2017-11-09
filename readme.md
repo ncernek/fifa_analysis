@@ -24,8 +24,8 @@ The client for this project is a fictional recruiting manager of the Real Madrid
 
 ## secondary explorations 
 The following explorations do not directly suggest recommendations, however they give insight that speaks to understanding a player's skills.
-[Predict overall rating based on individual techniques](skill_prediction.ipynb)
-[Determine whether a player is a specialist or a generalist](rating_distribution.ipynb)
+* [Predict overall rating based on individual techniques](secondary_analyses/skill_prediction.ipynb)
+* [Determine whether a player is a specialist or a generalist](secondary_analyses/rating_distribution.ipynb)
 
 
 ## installation guide
