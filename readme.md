@@ -13,12 +13,10 @@ The client for this project is a fictional recruiting manager of the Real Madrid
     * 'Overall' is a feature of the data that designates an individual player's overall skill
    
 ## solution
-There are 1 layers of analysis that can be applied to recommend replacement players. 
-
-1. **Simple Filter:** a filter that takes into account wage, position, and overall rating to make recommendations based on the input of replacing a single specific player. This filter takes into account that younger players will get a higher overall rating as they get older, by adjusting the overall rating by age.
+**Simple Filter:** a filter that takes into account wage, position, and overall rating to make recommendations based on the input of replacing a single specific player. This filter takes into account that younger players will get a higher overall rating as they get older, by adjusting the overall rating by age.
 
 ## project layout
-0. brainstorm solutions feature by feature
+0. [brainstorm solutions feature by feature](field_brainstorm.ipynb)
 1. [Clean the data](clean.ipynb)
 2. [Create filter on wage, position, and overall rating](filter_simple.ipynb)
 3. [Add age adjusted overall rating to filter](filter_age_adjusted.ipynb)
@@ -26,9 +24,9 @@ There are 1 layers of analysis that can be applied to recommend replacement play
 
 ## secondary explorations 
 The following explorations do not directly suggest recommendations, however they give insight that speaks to understanding a player's skills.
-[Predict overall rating based on individual techniques](predict_performance.ipynb)
+[Predict overall rating based on individual techniques](skill_prediction.ipynb)
 [Determine whether a player is a specialist or a generalist](rating_distribution.ipynb)
-[Explore the relationship between preferred and best positions](preferred_positions.ipynb)
+
 
 ## installation guide
 ```
